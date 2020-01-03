@@ -1,18 +1,16 @@
 <template>
     <div>
-        <header />
-
-        <footer />
+        <first-part-recherches />
     </div>    
 </template>
 
 <script>
-import Header from '../Header';
-import Footer from '../Footer';
+import FirstPartRecherches from './FirstPartRecherches'
 
 export default {
     name: 'Recherches',
-    components: Header,
-    Footer
+    components: {
+        FirstPartRecherches
+    }
 }
 </script>

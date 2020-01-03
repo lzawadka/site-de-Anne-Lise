@@ -1,9 +1,8 @@
 <template>
     <div>
-        <LandingPage/>
-        <header/>
-            <MenuPage/>
-        <footer/>    
+        <!--<LandingPage>
+        </LandingPage>-->
+        <MenuPage />
     </div>
 </template>
 
@@ -11,14 +10,16 @@
 import LandingPage from './LandingPage.vue' 
 import MenuPage from './MenuPage/MenuPage.vue'
 
-import Header from '../Header';
-import Footer from '../Footer';
+import HeaderContainer from '../Header';
+import FooterContainer from '../Footer';
 
 export default {
-    name: HomePage,
+    name: 'HomePage',
     components: {
         LandingPage,
         MenuPage,
+        FooterContainer,
+        HeaderContainer
   }
 }
 </script>

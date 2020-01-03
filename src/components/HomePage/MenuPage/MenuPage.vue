@@ -1,22 +1,28 @@
 <template>
-
-
-    <div class="cards">
-        <Cards title='Collection' v-bind:style="{ 'background-image': 'url('  + require('../../../assets/pictures/background.png') + ')' }"/>
-        <Cards title='Imprimés' v-bind:style="{ 'background-image': 'url('  + require('../../../assets/pictures/background.png') + ')' }"/>
-        <Cards title='Inspirations' v-bind:style="{ 'background-image': 'url('  + require('../../../assets/pictures/background.png') + ')' }"/>
-        <Cards title='Recherches' v-bind:style="{ 'background-image': 'url('  + require('../../../assets/pictures/background.png') + ')' }"/>
-    </div>
+  <div>
+    <div ><img class="bandeau1" src="../../../assets/pictures/bandeau1.png" /></div>
+    <card />
+  </div>
 </template>
 
 <script>
-import Cards from './Cards.vue'
+import Card from './Card'
 
 export default {
     name: 'MenuPage',
+    components: {
+        Card
+    }
 }
 </script>
 
 <style type="text/scss" lang="scss" scoped>
+
+.bandeau1 {
+    width: 100vw;
+    height: 80vh;
+    margin-top: 5vw;
+    margin-bottom: 2.5vw;
+}
 
 </style>

@@ -1,39 +1,40 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HomePage from '../components/HomePage/HomePage.vue'
-import Collection from '../components/Collection/Collection.vue'
-import Recherches from '../components/Recherches/Recherches.vue'
-import Inspiration from '../components/Inspiration/Inspiration.vue'
-import Imprimes from '../components/Imprimes/Imprimes.vue'
+
+import HomePage from '../components/HomePage/HomePage'
+import Collection from '../components/Collection/Collection'
+import Recherches from '../components/Recherches/Recherches'
+import Inspiration from '../components/Inspiration/Inspiration'
+import Imprimes from '../components/Imprimes/Imprimes'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/' || '/Accueil',
       name: 'HomePage',
-      components: HomePage
-    }, 
+      component: HomePage
+    },
     {
       path: '/Recherches',
       name: 'Recherches',
-      components: Recherches
-    }, 
+      component: Recherches
+    },
     {
       path: '/Collection',
       name: 'Collection',
-      components: Collection
-    }, 
+      component: Collection
+    },
     {
       path: '/Inspiration',
       name: 'Inspiration',
-      components: Inspiration
-    }, 
+      component: Inspiration
+    },
     {
       path: '/Imprimes',
       name: 'Imprimes',
-      components: Imprimes
+      component: Imprimes
     }
   ]
 })

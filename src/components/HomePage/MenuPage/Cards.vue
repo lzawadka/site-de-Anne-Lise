@@ -1,7 +1,7 @@
 <template>
     <div class="card">
         <p>
-            {{ title }}
+           <slot></slot>
         <p/>
     </div>
 </template>
@@ -15,14 +15,10 @@ export default {
 
 <style  type="text/scss" lang="scss" scoped>
 .card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30vw;
-    height: 30vw;
-
-    :hover {
-        transform: scale(1.1);
-    } 
+    display: block;
 }
+p {
+    pointer-events: none;
+}
+
 </style>

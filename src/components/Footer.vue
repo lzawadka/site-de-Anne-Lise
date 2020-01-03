@@ -1,26 +1,27 @@
 <template>
     <footer>
         <div class="footer">
-            <p>Contact : Anne-Lise-Ribeiro@hotmail.com</p>
-            <p class="copyright">© All right reserved Anne-lise Ribeiro</p>
+            <p>Contact : anne-lise-ribeiro@hotmail.com</p>
+            <p class="copyright">© All right reserved Anne-Lise Ribeiro</p>
         </div>
     </footer>
 </template>
 
 <script>
 export default {
-    name: 'Footer'
+    name: 'FooterContainer'
 }
 </script>
 
 <style type="text/scss" lang="scss" scoped>
     footer {
         display: block;
-        height: 5vh;
+        height: 8vh;
         width: 100vw;
         background-color: #E2C491;
 
         .footer {
+            height: 8vh;
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -30,7 +31,7 @@ export default {
 
         .copyright {
             font-size: 18px;
-            width: 10vw;
+            width: 20vw;
             text-align: center;
         }
     }
