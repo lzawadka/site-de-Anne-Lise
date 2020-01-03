@@ -39,6 +39,10 @@ p {
   margin: 0;
 }
 
+h1 {
+  margin: 0;
+}
+
 .card-link {
             text-decoration: none;
         }

@@ -18,7 +18,9 @@ export default {
         display: block;
         height: 8vh;
         width: 100vw;
-        background-color: #E2C491;
+        border-top: solid 2px #E2C491;
+        background-color: white;
+        cursor: default;
 
         .footer {
             height: 8vh;
@@ -26,7 +28,7 @@ export default {
             justify-content: space-around;
             align-items: center;
             width: 100vw;
-            font-size: 24px
+            font-size: 18px
         }
 
         .copyright {
