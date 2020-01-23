@@ -1,8 +1,8 @@
 <template>
     <div>
-        <header />
-        
-        <footer />
+            <first-part-imprime />
+            <second-part-imprime />
+            <third-part-imprime />
     </div>    
 </template>
 
@@ -10,9 +10,16 @@
 import Header from '../Header';
 import Footer from '../Footer';
 
+import FirstPartImprime from './FirstPartImprime';
+import SecondPartImprime from './SecondPartImprime';
+import ThirdPartImprime from './ThirdPartImprime';
+
 export default {
     name: 'Imprimes',
-    components: Header,
-    Footer
+    components: {
+        FirstPartImprime,
+        SecondPartImprime,
+        ThirdPartImprime
+    }
 }
 </script>

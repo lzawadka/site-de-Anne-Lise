@@ -40,14 +40,17 @@ export default {
 
     .mannequin1 {
       transform: translate(50px, -100px);
+      height: 65vh;
     }
 
     .mannequin2 {
       transform: translate(0px, 60px);
+      height: 40vh;
     }
 
     .mannequin3 {
       transform: translate(-20px, -140px);
+      height: 55vh;
     }
 
     img {

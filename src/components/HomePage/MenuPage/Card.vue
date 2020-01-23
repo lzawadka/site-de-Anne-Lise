@@ -9,6 +9,9 @@
             <router-link class="card-link" to="/Inspiration" exact><cards class='card' name='card' v-bind:style="{ 'background-image': 'url('  + require('../../../assets/pictures/background.png') + ')', 'background-repeat' : 'no-repeat', 'background-size' : 'cover' }">Inspirations</Cards></router-link>
             <router-link class="card-link" to="/Recherches" exact><cards class='card' name='card' v-bind:style="{ 'background-image': 'url('  + require('../../../assets/pictures/Recherches.png') + ')', 'background-repeat' : 'no-repeat', 'background-size' : 'cover' }" href="/Recherches"><p class="title-card-link">Recherches</p></Cards></router-link>
         </div>
+        <div class="card-container">
+            <router-link class="card-link" to="/Inspiration" exact><cards class='card' name='card' v-bind:style="{ 'background-image': 'url('  + require('../../../assets/pictures/ToileRobeChemise.png') + ')', 'background-repeat' : 'no-repeat', 'background-size' : 'cover' }">Toile</Cards></router-link>
+        </div>
     </div>
 </template>
 

@@ -35,6 +35,10 @@ export default {
         align-items: center;
         background-color: #E2C491;
         width: 50vw;
+
+        img {
+            height: 55vh;
+        }
     }
 }
 
