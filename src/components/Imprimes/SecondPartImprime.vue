@@ -9,13 +9,13 @@
         <div class="rectangle-grey-2"></div>
         <div class="mushroom-imprime">
             <!--<img class="imprime1" src="./../../assets/pictures/Imprimes/Imprime3.png" alt="">-->
-            <div class="imprime2"><img v-parallax="0.1"  src="./../../assets/pictures/Imprimes/Imprime4.png" alt=""></div>
+            <div class="imprime2"><img v-parallax="0.15"  src="./../../assets/pictures/Imprimes/Imprime4.png" alt=""></div>
         </div>
     </div>
     <div class="second-part" v-scroll-reveal.reset="{ delay : 0, viewFactor: 0.2 }">
         <img class="imprime5" src="./../../assets/pictures/Imprimes/Imprime5.png" alt="">
         <div class="rectangle-grey-3"></div>
-        <div class="imprime6" ><img src="./../../assets/pictures/Imprimes/Imprime6.png" alt=""></div>
+        <div v-parallax="0.1" class="imprime6" ><img src="./../../assets/pictures/Imprimes/Imprime6.png" alt=""></div>
     </div>
 </div>  
 
@@ -115,6 +115,7 @@ export default {
             justify-content: center;
             align-items: center;
             position: relative;   
+            right: 5vw;
         }
 
         .imprime5 {

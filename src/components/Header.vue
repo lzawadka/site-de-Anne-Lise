@@ -45,7 +45,7 @@ header {
   display: flex;
   justify-content: center;
   height: 70px;
-  width: 100vw;
+  width: 100%;
   background-color: white;
   border-bottom: solid 2px #E2C491;
   position: fixed;

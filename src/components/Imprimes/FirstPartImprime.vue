@@ -5,10 +5,10 @@
       <div class="image-container">
       </div>
   </div>
-  <div class="second-part" v-scroll-reveal.reset="{ delay : 0, viewFactor: 0.2 }">
-      <div>
+  <div class="second-part"  >
+      <div class="imprimeRectangle">
         <div class="rectangle1"><p>Lorem Ipsum</p></div>
-        <img class="imprime2" src="../../assets/pictures/Imprimes/Imprime2.png" alt="imprime2">
+        <img v-parallax="0.15" class="imprime2" src="../../assets/pictures/Imprimes/Imprime2.png" alt="imprime2">
       </div>
       <div>
         <div class="rectangle-grey-1"><img src="../../assets/pictures/Imprimes/Tenu1.png" alt=""></div>
@@ -64,16 +64,22 @@ export default {
     display: flex;
     flex-direction: row;
 
-    .rectangle1 {
-      width: 75vw;
-      height: 15vh;
-      background-color: #E2C491; 
-      transform: translateY(80px);
-      position: absolute;
-      z-index: 1;
+    .imprimeRectangle {
+      width: 60vw;
       display: flex;
       justify-content: center;
       align-items: center;
+
+      .rectangle1 {
+        width: 75vw;
+        height: 15vh;
+        background-color: #E2C491; 
+        transform: translateY(-400px);
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
       p {
         font-size: 70px;
@@ -82,9 +88,10 @@ export default {
 
     .imprime2 {
       height: 60vh;
-      transform: translate( 180px , 250px);
       width: 45vw;
     }
+    }
+    
 
     .rectangle-grey-1 {
       height: 100vh;
