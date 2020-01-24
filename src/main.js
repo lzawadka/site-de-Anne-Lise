@@ -4,7 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import VueParallaxJs from 'vue-parallax-js'
-import VueScrollReveal from 'vue-scroll-reveal'; 
+import VueScrollReveal from 'vue-scroll-reveal'
 
 Vue.use(VueScrollReveal);
 Vue.use(VueParallaxJs)

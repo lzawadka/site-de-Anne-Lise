@@ -17,14 +17,14 @@
         <div class="rectangle-grey-3"></div>
         <div v-parallax="0.1" class="imprime6" ><img src="./../../assets/pictures/Imprimes/Imprime6.png" alt=""></div>
     </div>
-</div>  
+</div>
 
 </template>
 
 <script>
 
 export default {
-    name: 'SecondPartImprime'
+  name: 'SecondPartImprime'
 }
 
 </script>
@@ -46,6 +46,10 @@ export default {
             align-items: center;
             width: 30vw;
             justify-content: space-around;
+
+            img {
+                width: 17vw;
+            }
         }
 
         .rectangle-grey-2 {

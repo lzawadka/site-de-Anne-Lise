@@ -5,7 +5,7 @@
       <div class="image-container">
       </div>
   </div>
-  <div class="second-part"  >
+  <div class="second-part" v-scroll-reveal.reset="{ delay : 0, viewFactor: 0.2 }">
       <div class="imprimeRectangle">
         <div class="rectangle1"><p>Lorem Ipsum</p></div>
         <img v-parallax="0.15" class="imprime2" src="../../assets/pictures/Imprimes/Imprime2.png" alt="imprime2">
@@ -22,14 +22,12 @@
 <script>
 
 export default {
-    name: 'FirstPartImprime'
+  name: 'FirstPartImprime'
 }
 
 </script>
 
 <style type="text/scss" lang="scss" scoped>
-
-
 .part-one {
   display: flex;
   flex-direction: column;
@@ -37,6 +35,7 @@ export default {
   .first-part {
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
     padding-top: 0.1vh;
     display: block;
 
@@ -74,7 +73,6 @@ export default {
         width: 75vw;
         height: 15vh;
         background-color: #E2C491; 
-        transform: translateY(-400px);
         position: absolute;
         z-index: 1;
         display: flex;
