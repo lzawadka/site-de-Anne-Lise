@@ -1,10 +1,10 @@
 <template>
-  <div class="first-part">
+  <div v-scroll-reveal.reset="{ delay : 0, viewFactor: 0.2 }" class="first-part">
         <div class="image-container">
-            <img class="recherche4" src="../../assets/pictures/Recherches/Recherche4.png">
-            <img class="recherche3" src="../../assets/pictures/Recherches/Recherche3.png">
-            <img class="recherche2" src="../../assets/pictures/Recherches/Recherche2.png">
-            <img class="recherche1" src="../../assets/pictures/Recherches/Recherche1.png">
+            <img v-parallax="-0.25" class="recherche4" src="../../assets/pictures/Recherches/Recherche4.png">
+            <img v-parallax="0.20" class="recherche3" src="../../assets/pictures/Recherches/Recherche3.png">
+            <img v-parallax="-0.25" class="recherche2" src="../../assets/pictures/Recherches/Recherche2.png">
+            <img v-parallax="0.15" class="recherche1" src="../../assets/pictures/Recherches/Recherche1.png">
         </div>
   </div>
 
@@ -39,25 +39,38 @@ export default {
     justify-content: center;
 
     .recherche1 {
-      transform: translate(30px, 150px);
+      margin-left: 465px;
+      margin-top: 400px;
+      position: absolute;
+      //transform: translate(30px, 150px);
       height: 60vh;
+      z-index: -1;
     }
 
     .recherche2 {
-      transform: translate(90px, 60px);
+      margin-left: 200px;
+      margin-top: 445px;
+      position: absolute;
+      //transform: translate(90px, 60px);
       z-index: 1;
       height: 70vh;
     }
 
     .recherche3 {
-      transform: translate(-150px, -60px);
+      margin-left: -200px;
+      margin-top: 245px;
+      position: absolute;
+      //transform: translate(-150px, -60px);
       z-index: 1;
       height: 50vh;
     }
 
     .recherche4 {
-      transform: translate(-120px, 100px);
-      height:80vh;
+      margin-left: -373px;
+      margin-top: 500px;
+      position: absolute;
+      //transform: translate(-120px, 100px);
+      height:70vh;
     }
 
     img {

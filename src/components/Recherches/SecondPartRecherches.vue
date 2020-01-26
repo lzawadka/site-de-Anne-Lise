@@ -1,5 +1,5 @@
 <template>
-    <div class="second-part">
+    <div v-scroll-reveal.reset="{ delay : 0, viewFactor: 0.2 }" class="second-part">
         <div class="second-part-first">
              <img>
         </div>
