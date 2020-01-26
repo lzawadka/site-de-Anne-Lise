@@ -28,7 +28,7 @@ export default {
             justify-content: space-around;
             align-items: center;
             width: 100vw;
-            font-size: 18px
+            font-size: 18px;
         }
 
         .copyright {
