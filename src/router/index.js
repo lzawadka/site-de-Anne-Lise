@@ -6,6 +6,8 @@ import Collection from '../components/Collection/Collection'
 import Recherches from '../components/Recherches/Recherches'
 import Inspiration from '../components/Inspiration/Inspiration'
 import Imprimes from '../components/Imprimes/Imprimes'
+import Textile from '../components/Textile/Textile'
+import Toile from '../components/Toile/Toile'
 
 Vue.use(Router)
 
@@ -35,6 +37,16 @@ export default new Router({
       path: '/Imprimes',
       name: 'Imprimes',
       component: Imprimes
+    },
+    {
+      path: '/Textile',
+      name: 'Textile',
+      component: Textile
+    },
+    {
+      path: '/Toile',
+      name: 'Toile',
+      component: Toile
     }
   ]
 })
