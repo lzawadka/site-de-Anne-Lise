@@ -98,7 +98,7 @@ export default {
                 height: 100vh;
                 width: 20vw;
                 background-color: #C4C4C4;
-                opacity: 58%;
+                opacity: 0.58;
                 position: absolute;
                 z-index: -1;
             }

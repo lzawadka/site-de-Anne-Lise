@@ -64,7 +64,7 @@ export default {
     }
 
     img {
-      opacity: 80%;
+      opacity: 0.80;
     }
   }
 

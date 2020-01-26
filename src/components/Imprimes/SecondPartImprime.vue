@@ -57,7 +57,7 @@ export default {
             height: 100vh;
             width: 30vw;
             background-color: #C4C4C4;
-            opacity: 58%;
+            opacity: 0.58;
         }
 
         .mushroom-imprime {
@@ -107,7 +107,7 @@ export default {
             height: 100vh;
             width: 35vw;
             background-color: #C4C4C4;
-            opacity: 58%;
+            opacity: 0.58;
             position: relative;
             z-index: -1;
         }

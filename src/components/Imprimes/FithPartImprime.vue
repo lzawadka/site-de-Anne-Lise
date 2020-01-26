@@ -69,7 +69,7 @@ export default {
                     height: 100vh;
                     width: 30vw;
                     background-color: #C4C4C4;
-                    opacity: 58%;
+                    opacity: 0.58;
                     position: absolute;
                     z-index: -1;
                 }
@@ -91,7 +91,7 @@ export default {
 
                 img {
                     margin-top: -50px;
-                    opacity: 60%;
+                    opacity: 0.6;
                     width: 40vw;
                 }
             }
@@ -104,7 +104,7 @@ export default {
 
                 img {
                     margin-top: -50px;
-                    opacity: 60%;
+                    opacity: 0.6;
                     width: 40vw;
                 }
             }
@@ -116,7 +116,7 @@ export default {
                 overflow: hidden;
 
                 img {
-                    opacity: 60%;
+                    opacity: 0.6;
                     width: 40vw;
                 }
             }

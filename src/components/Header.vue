@@ -53,7 +53,7 @@ header {
   border-bottom: solid 2px #E2C491;
   position: fixed;
   z-index: 99;
-  opacity: 95%;
+  opacity: 0.95;
     
 
   .header {
