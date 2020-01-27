@@ -69,7 +69,7 @@ export default {
         position: absolute;
         letter-spacing: 0.2vw;
         width: 30vw;
-        line-height: 4vh;
+        line-height: 28px;
         font-size: 30px;
         margin-top: 130px;
         margin-left: 250px;

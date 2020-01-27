@@ -1,18 +1,19 @@
 <template>
     <div>
-        <header />
-
-        <footer />
+        <first-part-collection />
+        <second-part-collection />
     </div>    
 </template>
 
 <script>
-import Header from '../Header';
-import Footer from '../Footer';
+import FirstPartCollection from './FirstPartCollection';
+import SecondPartCollection from './SecondPartCollection';
 
 export default {
     name: 'Collection',
-    components: Header,
-    Footer
+    components: {
+        FirstPartCollection,
+        SecondPartCollection
+    }
 }
 </script>

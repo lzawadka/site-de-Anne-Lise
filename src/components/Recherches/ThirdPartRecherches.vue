@@ -40,6 +40,7 @@ export default {
 
     .recherche1 {
       margin-left: 465px;
+      
       margin-top: 400px;
       position: absolute;
       //transform: translate(30px, 150px);

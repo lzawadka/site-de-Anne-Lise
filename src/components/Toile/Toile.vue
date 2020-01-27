@@ -7,8 +7,6 @@
 </template>
 
 <script>
-import Header from '../Header';
-import Footer from '../Footer';
 
 import FirstPartToile from './FirstPartToile';
 import SecondPartToile from './SecondPartToile';

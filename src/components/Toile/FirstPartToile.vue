@@ -45,7 +45,6 @@ export default {
       font-size: 150px;
       font-weight: 200;
       z-index: 2;
-      margin-top: 47px;
       margin-left: 50px;
     }
 
@@ -78,9 +77,9 @@ export default {
         position: absolute;
         letter-spacing: 0.2vw;
         width: 30vw;
-        line-height: 4vh;
+        line-height: 28px;
         font-size: 30px;
-        margin-top: 430px;
+        margin-top: 45vh;
         margin-left: 250px;
         z-index: 2;
       }
