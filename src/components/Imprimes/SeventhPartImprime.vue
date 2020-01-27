@@ -71,6 +71,7 @@ export default {
 
         .Imprime21 {
             height: 100vh;
+            width: 95vw;
         }
     }
 }
