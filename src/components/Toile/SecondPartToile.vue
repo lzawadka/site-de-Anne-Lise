@@ -1,20 +1,17 @@
 <template>
-<div class="part-one">
+<div class="part-two">
   <div class="first-part" v-scroll-reveal.reset="{ delay: 150 }">
-      <h1>-Toile</h1>
       <div class="firstDiv">
-        <img v-parallax="-0.3" class="toile1" src="./../../assets/pictures/Toile/Toile1.png" alt="">
+        <img v-parallax="-0.3" class="toile5" src="./../../assets/pictures/Toile/Toile5.png" alt="">
         <div class="firstRectangle"></div>
-        <img v-parallax="0.25" class="toile2" src="./../../assets/pictures/Toile/Toile2.png" alt="">
-        <p>Le jogging, une piece confortable qui se recroqueville et se plisse avec le temps qui passe.
-          une forme qui plisse et nous donne envie de nous relacher.  </p>
+        <p v-parallax="0.25">La robe chemise, une mini robe qui s’ecroule et s’affaisse comme une peau qui tomberait avec le temps et creer une comparaison avec le coté lisse.  </p>
       </div>
       
   </div>
   <div class="second-part" v-scroll-reveal.reset="{ delay : 0, viewFactor: 0.2 }">
-    <img  v-parallax="0.05" class="toile3" src="./../../assets/pictures/Toile/Toile3.png" alt="">
+    <img  v-parallax="0.15" class="toile6" src="./../../assets/pictures/Toile/Toile6.png" alt="">
     <div class="secondRectangle"></div>
-    <img v-parallax="-0.3" class="toile4" src="./../../assets/pictures/Toile/Toile4.png" alt="">
+    <img v-parallax="-0.3" class="toile7" src="./../../assets/pictures/Toile/Toile7.png" alt="">
   </div>
 </div>  
 
@@ -23,14 +20,13 @@
 <script>
 
 export default {
-  name: 'FirstPartToile'
+  name: 'SecondPartToile'
 }
 
 </script>
 
 <style type="text/scss" lang="scss" scoped>
-.part-one {
-  margin-top: 70px;
+.part-two {
   display: flex;
   flex-direction: column;
 
@@ -57,21 +53,15 @@ export default {
       .firstRectangle {
         background-color: #E2C491;
         height: 100vh;
-        width: 43vw;
+        width: 27vw;
+        margin-left: -100px;
       }
 
-      .toile1 {
-        max-height: 50vh;
+      .toile5 {
+        max-height: 65vh;
         position: absolute;
         margin-left: -300px;
-        margin-top: 230px;
-      }
-
-      .toile2 {
-        max-height: 50vh;
-        position: absolute;
-        margin-left: 300px;
-        margin-top: 35px;
+        margin-top: 130px;
       }
 
       p {
@@ -80,7 +70,7 @@ export default {
         width: 30vw;
         line-height: 4vh;
         font-size: 30px;
-        margin-top: 430px;
+        margin-top: 130px;
         margin-left: 250px;
         z-index: 2;
       }
@@ -96,22 +86,24 @@ export default {
       .secondRectangle {
         background-color: #E2C491;
         height: 100vh;
-        width: 20vw;
-        margin-left: 314px;
+        width: 25vw;
+        position: absolute;
+        left: 0;
+        z-index: -1;
       }
 
-      .toile3 {
-        max-height: 74vh;
+      .toile6 {
+        max-height: 65vh;
         position: absolute;
         margin-left: -360px;
-        margin-top: 60px;
+        margin-top: 160px;
       }
 
-      .toile4 {
-        max-height: 50vh;
+      .toile7 {
+        max-height: 80vh;
         position: absolute;
         margin-left: 300px;
-        margin-top: 250px;
+        margin-top: 50px;
       }
   }
 } 

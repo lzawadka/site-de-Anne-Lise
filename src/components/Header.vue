@@ -54,6 +54,7 @@ header {
   position: fixed;
   z-index: 99;
   opacity: 0.95;
+  top: 0%;
     
 
   .header {

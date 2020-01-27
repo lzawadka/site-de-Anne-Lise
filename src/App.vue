@@ -37,6 +37,6 @@ h1 {
   margin: 0;
 }
 .card-link {
-            text-decoration: none;
-        }
+  text-decoration: none;
+}
 </style>
