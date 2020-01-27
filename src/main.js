@@ -6,8 +6,8 @@ import router from './router'
 import VueParallaxJs from 'vue-parallax-js'
 import VueScrollReveal from 'vue-scroll-reveal'
 
-Vue.use(VueScrollReveal);
 Vue.use(VueParallaxJs)
+Vue.use( VueScrollReveal)
 Vue.config.productionTip = true
 
 /* eslint-disable no-new */

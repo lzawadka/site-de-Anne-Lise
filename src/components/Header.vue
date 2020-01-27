@@ -1,28 +1,28 @@
 <template>
-    <header>
-        <div class="header">
-             <router-link class="card-link" to="/" exact><p>Anne-Lise Ribeiro</p></router-link>
-            <div class="container-menu">
-                <div class="menu" v-on:click="dropDownList(); rotateArrow()">
-                    <p>Menu</p>
-                    <img src="./../assets/pictures/arrow.png" id="arrow" class="arrow">
-                </div>
-                <div id="drop-down-list" class="drop-down-list">
-                    <ul class="drop-down-list-ul">
-                        <router-link class="card-link" to="/" exact><li>Accueil</li></router-link>
-                        <router-link class="card-link" to="/Shooting" exact><li>Shooting</li></router-link>
-                        <router-link class="card-link" to="/Collection" exact><li>Collection</li></router-link>
-                        <router-link class="card-link" to="/Imprimes" exact><li>Imprimés</li></router-link>
-                        <router-link class="card-link" to="/Inspiration" exact><li>Inspirations</li></router-link>
-                        <router-link class="card-link" to="/Recherches" exact><li>Recherches</li></router-link>
-                        <router-link class="card-link" to="/Toile" exact><li>Toile</li></router-link>
-                        <router-link class="card-link" to="/Textile" exact><li>Textile</li></router-link>
-                    </ul>
-                </div>
-            </div>
-            
+  <header>
+    <div class="header">
+    <router-link class="card-link" to="/" exact><p>Anne-Lise Ribeiro</p></router-link>
+    <div class="container-menu">
+        <div class="menu" v-on:click="dropDownList(); rotateArrow()">
+          <p>Menu</p>
+          <img src="./../assets/pictures/arrow.png" id="arrow" class="arrow">
         </div>
-    </header>    
+    <div id="drop-down-list" class="drop-down-list">
+      <ul class="drop-down-list-ul">
+        <router-link @click="moveTo" class="card-link" to="/" exact><li>Accueil</li></router-link>
+        <router-link @click="moveTo" class="card-link" to="/Shooting" exact><li>Shooting</li></router-link>
+        <router-link @click="moveTo" class="card-link" to="/Collection" exact><li>Collection</li></router-link>
+        <router-link @click="moveTo" class="card-link" to="/Imprimes" exact><li>Imprimés</li></router-link>
+        <router-link @click="moveTo" class="card-link" to="/Inspiration" exact><li>Inspirations</li></router-link>
+        <router-link @click="moveTo" class="card-link" to="/Recherches" exact><li>Recherches</li></router-link>
+        <router-link @click="moveTo" class="card-link" to="/Toile" exact><li>Toile</li></router-link>
+        <router-link @click="moveTo" class="card-link" to="/Textile" exact><li>Textile</li></router-link>
+      </ul>
+    </div>
+  </div>
+
+  </div>
+  </header>    
 </template>
 
 <script>
@@ -36,7 +36,20 @@ export default {
     rotateArrow : function RotateArrow() {
         let element = document.getElementById("arrow");
         element.classList.toggle("arrow-rotate");
-    }
+    },
+    moveTo () {
+      let to = this.moveToDown
+        ? this.$refs.description.offsetTop - 60
+        : 0
+
+      window.scroll({
+        top: to,
+        left: 0,
+        behavior: 'smooth'
+      })
+
+    this.moveToDown = !this.moveToDown
+}
   }
 }
 

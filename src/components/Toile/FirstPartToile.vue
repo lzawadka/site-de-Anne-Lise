@@ -60,16 +60,16 @@ export default {
       }
 
       .toile1 {
-        max-height: 50vh;
+        height: 50vh;
         position: absolute;
-        margin-left: -300px;
+        left: 15vw;
         margin-top: 230px;
       }
 
       .toile2 {
-        max-height: 50vh;
+        height: 50vh;
         position: absolute;
-        margin-left: 300px;
+        right: 20vw;
         margin-top: 35px;
       }
 
@@ -100,16 +100,16 @@ export default {
       }
 
       .toile3 {
-        max-height: 74vh;
+        height: 74vh;
         position: absolute;
-        margin-left: -360px;
+        left: 10vw;
         margin-top: 60px;
       }
 
       .toile4 {
-        max-height: 50vh;
+        height: 50vh;
         position: absolute;
-        margin-left: 300px;
+        right: 18vw;
         margin-top: 250px;
       }
   }

@@ -59,7 +59,7 @@ export default {
       }
 
       .toile8 {
-        max-height: 65vh;
+        height: 65vh;
         position: absolute;
         margin-left: -250px;
         margin-top: 130px;
@@ -93,16 +93,16 @@ export default {
       }
 
       .toile9 {
-        max-height: 65vh;
+        height: 65vh;
         position: absolute;
-        margin-left: -360px;
+        left: 10vw;
         margin-top: 140px;
       }
 
       .toile10 {
-        max-height: 80vh;
+        height: 80vh;
         position: absolute;
-        margin-left: 300px;
+        right: 10vw;
         margin-top: 150px;
       }
   }
