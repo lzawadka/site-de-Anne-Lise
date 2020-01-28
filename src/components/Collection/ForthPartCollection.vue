@@ -8,8 +8,10 @@
     </div>
   </div>
   <div class="second-part" v-scroll-reveal.reset="{ delay : 0, viewFactor: 0.2 }">
-    <img v-parallax="-0.15" class="Collection11" src="./../../assets/pictures/Collection/Collection11.png" alt="">
-    <img class="Collection10" src="./../../assets/pictures/Collection/Collection10.png" alt="">
+    <img v-parallax="-0.15" class="Collection13" src="./../../assets/pictures/Collection/Collection13.png" alt="">
+    <img v-parallax="0.15" class="Collection14" src="./../../assets/pictures/Collection/Collection14.png" alt="">
+    <img v-parallax="-0.15" class="Collection15" src="./../../assets/pictures/Collection/Collection15.png" alt="">
+    <img v-parallax="0.15" class="Collection16" src="./../../assets/pictures/Collection/Collection16.png" alt="">
     <div class="firstRectangle"></div>
   </div>
 </div>
@@ -87,20 +89,34 @@ export default {
     justify-content: center;
 
       .firstRectangle {
-        background-color: #E2C491;
-        margin-top: 170px;
-        height: 45vh;
-        width: 43vw;
+        background-color: #C2C2C2;
+        margin-top: 70vh;
+        position: absolute;
+        height: 5vh;
+        width: 85vw;
       }
 
-      .Collection10 {
-        height: 90vh;
+      .Collection13 {
+        height: 80vh;
         position: absolute;
         right: 20vw;
       }
 
-      .Collection11 {
-        height: 70vh;
+      .Collection14 {
+        height: 80vh;
+        position: absolute;
+        left: 20vw;
+        margin-top: 5vh;
+      }
+
+      .Collection15 {
+        height: 80vh;
+        position: absolute;
+        right: 20vw;
+      }
+
+      .Collection16 {
+        height: 80vh;
         position: absolute;
         left: 20vw;
         margin-top: 5vh;
