@@ -18,8 +18,6 @@
             <div class="secondRectangle"><img v-parallax="-0.05" src="./../../assets/pictures/Imprimes/Imprime15.png" alt=""></div>
             <div class="thirdRectangle"><img v-parallax="0.4" src="./../../assets/pictures/Imprimes/Imprime14.png" alt=""></div>
         </div>
-        
-
     </div>
 </template>
 
@@ -47,13 +45,15 @@ export default {
                 position: relative;
 
                 .Imprime11 {
-                    margin-top: 350px;
+                    transform: translateY(50vh);
+                    max-height: 50vh;
                 }
 
                 img {
                     display: block;
                     position: absolute;
                     right: 0;
+                    max-height: 50vh;
                 }
             }
 
@@ -63,6 +63,7 @@ export default {
                 img {
                     margin-top: 75px;
                     margin-left: 150px;
+                    max-height: 75vh;
                 }
 
                 .rectangleGrey {

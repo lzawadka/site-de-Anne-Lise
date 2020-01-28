@@ -90,7 +90,7 @@ export default {
 
             .imprime8 {
                 width: 25vw;
-                margin-top: -300px;
+                margin-top: -150px;
             }
 
             .rectangle-grey-4 {

@@ -89,6 +89,7 @@ export default {
 
     img {
       margin-left: 450px;
+      max-height: 90vh;
     }
 
     .secondRectangle {

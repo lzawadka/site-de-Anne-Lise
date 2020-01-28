@@ -2,23 +2,24 @@
 <div class="part-one">
   <div class="first-part" v-scroll-reveal.reset="{ delay: 150 }">
     <div class="firstDiv">
-      <img v-parallax="0.4" class="Collection5" src="./../../assets/pictures/Collection/Collection5.png" alt="">
-      <img class="Collection6" src="./../../assets/pictures/Collection/Collection6.png" alt="">
+      <img class="Collection12" src="./../../assets/pictures/Collection/Collection12.png" alt="">
+      <div class="firstRectangle"></div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend lorem neque, in consequat lectus lobortis et. Mauris ornare condimentum viverra. </p>
     </div>
   </div>
-  <div class="background-color">
-    <div class="second-part" v-scroll-reveal.reset="{ delay : 0, viewFactor: 0.2 }">
-      <img class="Collection7" src="./../../assets/pictures/Collection/Collection7.png" alt="">
-    </div>
+  <div class="second-part" v-scroll-reveal.reset="{ delay : 0, viewFactor: 0.2 }">
+    <img v-parallax="-0.15" class="Collection11" src="./../../assets/pictures/Collection/Collection11.png" alt="">
+    <img class="Collection10" src="./../../assets/pictures/Collection/Collection10.png" alt="">
+    <div class="firstRectangle"></div>
   </div>
-</div>  
+</div>
 
 </template>
 
 <script>
 
 export default {
-  name: 'SecondPartCollection'
+  name: 'ForthPartCollection'
 }
 
 </script>
@@ -28,6 +29,9 @@ export default {
   margin-top: 70px;
   display: flex;
   flex-direction: column;
+  background-color: white;
+  position: relative;
+  z-index: 9;
 
   .first-part {
     width: 100vw;
@@ -43,55 +47,38 @@ export default {
       margin-left: 50px;
     }
 
-    .firstDiv {  
-      height: 100vh;
+    .firstDiv {
       display: flex;
       flex-direction: row;
       justify-content: center;
-      overflow: hidden;
 
       .firstRectangle {
         background-color: #E2C491;
         margin-top: 170px;
-        height: 45vh;
-        width: 43vw;
-        margin-left: -250px;
-      }
-
-      .Collection5 {
-        height: 100vh;
-        width: 100vw;
         position: absolute;
         z-index: -1;
+        right: 10vw;
+        height: 45vh;
+        width: 43vw;
       }
 
-      .Collection6 {
-        min-height: 95vh;
-        left: 5vw;
+      .Collection12 {
+        height: 90vh;
         position: absolute;
-        margin-top: -30px;
       }
 
       p {
-        padding: 20px;
-        border: 3px solid black;
         position: absolute;
         letter-spacing: 0.2vw;
         width: 30vw;
-        line-height: 4vh;
+        line-height: 28px;
         font-size: 30px;
-        margin-top: 350px;
-        margin-left: 250px;
+        margin-top: 50vh;
+        left: 10vw;
         z-index: 2;
       }
     }
   }
-
-.background-color {
-  z-index: 98;
-  position: relative;
-  background-color: white;
-}
 
   .second-part {
     width: 100vw;
@@ -99,19 +86,24 @@ export default {
     display: flex;
     justify-content: center;
 
-      .secondRectangle {
+      .firstRectangle {
         background-color: #E2C491;
+        margin-top: 170px;
         height: 45vh;
         width: 43vw;
-        margin-left: 100px;
-        margin-top: 370px;
       }
 
-      .Collection7 {
-        height: 100vh;
+      .Collection10 {
+        height: 90vh;
         position: absolute;
-        right: 0;
-        margin-top: 5px;
+        right: 20vw;
+      }
+
+      .Collection11 {
+        height: 70vh;
+        position: absolute;
+        left: 20vw;
+        margin-top: 5vh;
       }
   }
 } 
