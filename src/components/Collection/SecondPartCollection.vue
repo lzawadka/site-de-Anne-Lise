@@ -67,6 +67,7 @@ export default {
 
       .Collection6 {
         min-height: 95vh;
+        max-height: 100vh;
         left: 5vw;
         position: absolute;
         margin-top: -30px;

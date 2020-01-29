@@ -1,18 +1,22 @@
 <template>
     <div>
-        <header />
-        
-        <footer />
+        <first-part-inspi />
+        <second-part-inspi />
+        <third-part-inspi />
     </div>    
 </template>
 
 <script>
-import Header from '../Header';
-import Footer from '../Footer';
+import FirstPartInspi from './FirstPartInspi'
+import SecondPartInspi from './SecondPartInspi'
+import ThirdPartInspi from './ThirdPartInspi'
 
 export default {
     name: 'Inspiration',
-    components: Header,
-    Footer
+    components: {
+        FirstPartInspi,
+        SecondPartInspi,
+        ThirdPartInspi
+    }
 }
 </script>

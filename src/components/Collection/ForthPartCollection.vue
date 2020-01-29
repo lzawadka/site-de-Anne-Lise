@@ -4,14 +4,13 @@
     <div class="firstDiv">
       <img class="Collection12" src="./../../assets/pictures/Collection/Collection12.png" alt="">
       <div class="firstRectangle"></div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend lorem neque, in consequat lectus lobortis et. Mauris ornare condimentum viverra. </p>
     </div>
   </div>
   <div class="second-part" v-scroll-reveal.reset="{ delay : 0, viewFactor: 0.2 }">
     <img v-parallax="-0.15" class="Collection13" src="./../../assets/pictures/Collection/Collection13.png" alt="">
     <img v-parallax="0.15" class="Collection14" src="./../../assets/pictures/Collection/Collection14.png" alt="">
-    <img v-parallax="-0.15" class="Collection15" src="./../../assets/pictures/Collection/Collection15.png" alt="">
-    <img v-parallax="0.15" class="Collection16" src="./../../assets/pictures/Collection/Collection16.png" alt="">
+    <img v-parallax="0.15" class="Collection15" src="./../../assets/pictures/Collection/Collection15.png" alt="">
+    <img v-parallax="-0.15" class="Collection16" src="./../../assets/pictures/Collection/Collection16.png" alt="">
     <div class="firstRectangle"></div>
   </div>
 </div>
@@ -68,17 +67,6 @@ export default {
         height: 90vh;
         position: absolute;
       }
-
-      p {
-        position: absolute;
-        letter-spacing: 0.2vw;
-        width: 30vw;
-        line-height: 28px;
-        font-size: 30px;
-        margin-top: 50vh;
-        left: 10vw;
-        z-index: 2;
-      }
     }
   }
 
@@ -90,36 +78,37 @@ export default {
 
       .firstRectangle {
         background-color: #C2C2C2;
-        margin-top: 70vh;
+        margin-top: 75vh;
         position: absolute;
-        height: 5vh;
+        z-index: -1;
+        height: 3vh;
         width: 85vw;
       }
 
       .Collection13 {
         height: 80vh;
         position: absolute;
-        right: 20vw;
+        left: 10vw;
       }
 
       .Collection14 {
         height: 80vh;
         position: absolute;
-        left: 20vw;
-        margin-top: 5vh;
+        left: 30vw;
+        margin-top: 10vh;
       }
 
       .Collection15 {
         height: 80vh;
         position: absolute;
-        right: 20vw;
+        right: 10vw;
+        margin-top: 10vh;
       }
 
       .Collection16 {
         height: 80vh;
         position: absolute;
-        left: 20vw;
-        margin-top: 5vh;
+        right: 30vw;
       }
   }
 } 

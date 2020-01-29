@@ -5,7 +5,7 @@
     <div class="firstDiv">
       <img class="Collection1" src="./../../assets/pictures/Collection/Collection1.png" alt="">
       <div class="firstRectangle"></div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eleifend lorem neque, in consequat lectus lobortis et. Mauris ornare condimentum viverra. </p>
+      <p></p>
     </div>
       
   </div>
@@ -59,7 +59,7 @@ export default {
 
       .firstRectangle {
         background-color: #E2C491;
-        margin-top: 170px;
+        margin-top: 17vh;
         height: 45vh;
         width: 43vw;
         margin-left: -250px;
@@ -77,10 +77,11 @@ export default {
         position: absolute;
         letter-spacing: 0.2vw;
         width: 30vw;
+        height: 30vh;
         line-height: 4vh;
         font-size: 30px;
-        margin-top: 350px;
-        margin-left: 250px;
+        margin-top: 40vh;
+        margin-left: 19vw;
         z-index: 2;
       }
     }
@@ -97,7 +98,7 @@ export default {
         height: 45vh;
         width: 43vw;
         margin-left: 100px;
-        margin-top: 370px;
+        margin-top: 37vh;
       }
 
       .Collection2 {
@@ -117,7 +118,7 @@ export default {
       .Collection4 {
         height: 60vh;
         position: absolute;
-        left: 290px;
+        left: 20vw;
         margin-top: 33vh;
       }
 

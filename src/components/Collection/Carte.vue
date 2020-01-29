@@ -1,0 +1,25 @@
+<template>
+        <div v-scroll-reveal.reset="{ delay : 0, viewFactor: 0.2 }" class='carte'></div>
+</template>
+
+<script>
+
+export default {
+  name: 'Carte',
+   
+}
+</script>
+
+<style type="text/scss" lang="scss" scoped>
+
+.carte {
+    height: 45vh;
+    width: 18vw;
+    position: relative;
+}
+
+img {
+    height: 45vh;
+}
+
+</style>
