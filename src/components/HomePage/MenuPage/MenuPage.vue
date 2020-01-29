@@ -1,6 +1,5 @@
 <template>
   <div>
-    <div ><img class="bandeau1" src="../../../assets/pictures/bandeau1.png" /></div>
     <card />
   </div>
 </template>

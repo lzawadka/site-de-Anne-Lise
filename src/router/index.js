@@ -8,6 +8,7 @@ import Inspiration from '../components/Inspiration/Inspiration'
 import Imprimes from '../components/Imprimes/Imprimes'
 import Textile from '../components/Textile/Textile'
 import Toile from '../components/Toile/Toile'
+import Shooting from '../components/Shooting/Shooting'
 
 Vue.use(Router)
 
@@ -42,6 +43,11 @@ export default new Router({
       path: '/Textile',
       name: 'Textile',
       component: Textile
+    },
+    {
+      path: '/Shooting',
+      name: 'Shooting',
+      component: Shooting
     },
     {
       path: '/Toile',
