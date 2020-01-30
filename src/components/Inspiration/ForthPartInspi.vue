@@ -2,18 +2,14 @@
 <div class="part-two">
   <div class="first-part" v-scroll-reveal.reset="{ delay: 150 }">
       <div class="firstDiv">
-        <img v-parallax="-0.3" class="Inspiration2" src="./../../assets/pictures/Inspiration/Inspiration2.png" alt="">
-        <div class="firstRectangle"></div>
-        <p v-parallax="0.15">L’artiste et photographe JR, à influencé ma collection. Il prend en photo des personnes agées, les peints sur des immeubles abimés par le temps et reprend le tout en photo. Il créé une parrallele entre l’homme et la sociétée </p>
-        <img v-parallax="-0.3" class="Inspiration3" src="./../../assets/pictures/Inspiration/Inspiration3.png" alt="">
+        <img class="Inspiration6" src="./../../assets/pictures/Inspiration/Inspiration6.png" alt="">
       </div>
       
   </div>
   <div class="second-part" v-scroll-reveal.reset="{ delay : 0, viewFactor: 0.2 }">
-    <img  v-parallax="0.05" class="Inspiration4" src="./../../assets/pictures/Inspiration/Inspiration4.png" alt="">
+    <img  v-parallax="0.15" class="Inspiration7" src="./../../assets/pictures/Inspiration/Inspiration7.png" alt="">
     <div class="secondRectangle"></div>
-    <p v-parallax="0.15">Pour retranscire le corps qui vieillie et qui se deforme, j’ai pris en photo des mannequins devant des mirroirs deformant pour les retranscires en mini moulage</p>
-    <img v-parallax="-0.2" class="Inspiration5" src="./../../assets/pictures/Inspiration/Inspiration5.png" alt="">
+    <img v-parallax="-0.4" class="Inspiration8" src="./../../assets/pictures/Inspiration/Inspiration8.png" alt="">
   </div>
 </div>  
 
@@ -22,7 +18,7 @@
 <script>
 
 export default {
-  name: 'ThirdPartToile'
+  name: 'ForthPartToile'
 }
 
 </script>
@@ -48,30 +44,17 @@ export default {
     }
 
     .firstDiv {  
+      width: 100vw;
+      height: 100vh;
       display: flex;
       flex-direction: row;
       justify-content: center;
+      align-items: center;
 
-      .firstRectangle {
-        background-color: #E2C491;
-        height: 100vh;
-        width: 28vw;
-        margin-left: -15vw;
+      .Inspiration6 {
+        height: 85vh;
       }
 
-      .Inspiration2 {
-        height: 50vh;
-        position: absolute;
-        left: 15vw;
-        margin-top: 130px;
-      }
-
-      .Inspiration3 {
-        height: 50vh;
-        position: absolute;
-        right: 12vw;
-        margin-top: 58vh;
-      }
 
       p {
         position: absolute;
@@ -95,24 +78,23 @@ export default {
       .secondRectangle {
         background-color: #E2C491;
         height: 100vh;
-        width: 25vw;
+        width: 30vw;
         position: absolute;
-        right: 20vw;
         z-index: -1;
       }
 
-      .Inspiration4 {
-        height: 70vh;
+      .Inspiration8 {
+        height: 45vh;
         position: absolute;
         right: 5vw;
-        margin-top: 5vh;
+        margin-top: 55vh;
       }
 
-      .Inspiration5 {
+      .Inspiration7 {
         height: 60vh;
         position: absolute;
         left: 3vw;
-        margin-top: 16vh;
+        margin-top: 10vh;
       }
 
       p {

@@ -1,17 +1,17 @@
 <template>
 <div class="part-three">
+  <div class="second-part" v-scroll-reveal.reset="{ delay : 0, viewFactor: 0.2 }">
+    <img  v-parallax="0.2" class="toile11" src="./../../assets/pictures/Toile/Toile11.png" alt="">
+    <div class="secondRectangle"></div>
+    <img v-parallax="-0.1" class="toile12" src="./../../assets/pictures/Toile/Toile12.png" alt="">
+  </div>
+
   <div class="first-part" v-scroll-reveal.reset="{ delay: 150 }">
       <div class="firstDiv">
-        <img v-parallax="-0.3" class="toile8" src="./../../assets/pictures/Toile/Toile8.png" alt="">
+        <img v-parallax="-0.3" class="toile13" src="./../../assets/pictures/Toile/Toile13.png" alt="">
         <div class="firstRectangle"></div>
-        <p v-parallax="0.25">Une doudoune revisité, avec un coté oversize qui efface le corps et le fait disparaitre.</p>
+        <p v-parallax="0.25">Cette robe est aspirée au niveau du ventre grace à des debut de pince comme un corp qui prend forme et degouline autour.</p>
       </div>
-      
-  </div>
-  <div class="second-part" v-scroll-reveal.reset="{ delay : 0, viewFactor: 0.2 }">
-    <img  v-parallax="0.15" class="toile9" src="./../../assets/pictures/Toile/Toile9.png" alt="">
-    <div class="secondRectangle"></div>
-    <img v-parallax="-0.2" class="toile10" src="./../../assets/pictures/Toile/Toile10.png" alt="">
   </div>
 </div>  
 
@@ -20,7 +20,7 @@
 <script>
 
 export default {
-  name: 'ThirdPartToile'
+  name: 'ForthPartToile'
 }
 
 </script>
@@ -36,6 +36,15 @@ export default {
     overflow: hidden;
     display: block;
 
+    h1 {
+      position: absolute;
+      font-size: 150px;
+      font-weight: 200;
+      z-index: 2;
+      margin-top: 47px;
+      margin-left: 50px;
+    }
+
     .firstDiv {  
       display: flex;
       flex-direction: row;
@@ -44,13 +53,14 @@ export default {
       .firstRectangle {
         background-color: #E2C491;
         height: 100vh;
-        width: 27vw;
+        width: 30vw;
         position: absolute;
-        right: 0;
+        left: 24vw;
       }
 
-      .toile8 {
+      .toile13 {
         height: 65vh;
+        z-index: 2;
         position: absolute;
         margin-left: -25vw;
         margin-top: 13vh;
@@ -59,7 +69,7 @@ export default {
       p {
         position: absolute;
         letter-spacing: 0.2vw;
-        width: 35vw;
+        width: 40vw;
         line-height: 28px;
         font-size: 30px;
         margin-top: 130px;
@@ -78,23 +88,24 @@ export default {
       .secondRectangle {
         background-color: #E2C491;
         height: 100vh;
-        width: 43vw;
-        position: relative;
+        width: 25vw;
+        position: absolute;
+        left: 0;
         z-index: -1;
       }
 
-      .toile9 {
-        height: 65vh;
+      .toile11 {
+        height: 55vh;
         position: absolute;
         left: 10vw;
         margin-top: 140px;
       }
 
-      .toile10 {
+      .toile12 {
         height: 80vh;
         position: absolute;
         right: 10vw;
-        margin-top: 150px;
+        margin-top: 10vh;
       }
   }
 } 

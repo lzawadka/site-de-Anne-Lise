@@ -12,7 +12,7 @@ export default {
 <style type="text/scss" lang="scss" scoped>
 
 .carte {
-    height: 45vh;
+    height: 47vh;
     width: 18vw;
     position: relative;
     display: flex;

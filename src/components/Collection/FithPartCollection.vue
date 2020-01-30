@@ -7,7 +7,7 @@
     </div>
   </div>
   <div class="second-part">
-    <div v-scroll-reveal.reset="{ delay : 0, viewFactor: 0.2 }">
+    <div class="collection-container" v-scroll-reveal.reset="{ delay : 0, viewFactor: 0.2 }">
       <img class="Collection19" src="./../../assets/pictures/Collection/Collection19.png" alt="">
     </div>
   </div>
@@ -58,6 +58,14 @@ export default {
     }
   }
 
+  .collection-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .second-part {
     width: 100vw;
     height: 100vh;
@@ -66,7 +74,7 @@ export default {
     align-items: center;
     background-color: white;
 
-      .Collection9 {
+      .Collection19 {
         height: 100vh;
         position: absolute;
       }

@@ -6,6 +6,8 @@
         <forth-part-collection />
         <fith-part-collection />
         <sixth-part-collection />
+        <seventh-part-collection />
+        <eight-part-collection />
     </div>
 </template>
 
@@ -16,6 +18,8 @@ import ThirdPartCollection from './ThirdPartCollection'
 import ForthPartCollection from './ForthPartCollection'
 import FithPartCollection from './FithPartCollection'
 import SixthPartCollection from './SixthPartCollection'
+import SeventhPartCollection from './SeventhPartCollection'
+import EightPartCollection from './EightPartCollection'
 
 export default {
   name: 'Collection',
@@ -25,7 +29,9 @@ export default {
     ThirdPartCollection,
     ForthPartCollection,
     FithPartCollection,
-    SixthPartCollection
+    SixthPartCollection,
+    SeventhPartCollection,
+    EightPartCollection
   }
 }
 </script>
