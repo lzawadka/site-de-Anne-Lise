@@ -4,6 +4,8 @@
         <second-part-collection />
         <third-part-collection />
         <forth-part-collection />
+        <fith-part-collection />
+        <sixth-part-collection />
     </div>
 </template>
 
@@ -12,6 +14,8 @@ import FirstPartCollection from './FirstPartCollection'
 import SecondPartCollection from './SecondPartCollection'
 import ThirdPartCollection from './ThirdPartCollection'
 import ForthPartCollection from './ForthPartCollection'
+import FithPartCollection from './FithPartCollection'
+import SixthPartCollection from './SixthPartCollection'
 
 export default {
   name: 'Collection',
@@ -19,7 +23,9 @@ export default {
     FirstPartCollection,
     SecondPartCollection,
     ThirdPartCollection,
-    ForthPartCollection
+    ForthPartCollection,
+    FithPartCollection,
+    SixthPartCollection
   }
 }
 </script>

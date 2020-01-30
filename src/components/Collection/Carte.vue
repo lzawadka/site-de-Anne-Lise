@@ -1,12 +1,11 @@
 <template>
-        <div v-scroll-reveal.reset="{ delay : 0, viewFactor: 0.2 }" class='carte'></div>
+        <div v-scroll-reveal.reset="{ delay : 0, viewFactor: 0.2 }" class='carte'><slot></slot></div>
 </template>
 
 <script>
 
 export default {
-  name: 'Carte',
-   
+  name: 'Carte'
 }
 </script>
 
@@ -16,9 +15,12 @@ export default {
     height: 45vh;
     width: 18vw;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-img {
+slot {
     height: 45vh;
 }
 

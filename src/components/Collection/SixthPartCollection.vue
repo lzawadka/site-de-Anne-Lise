@@ -1,6 +1,6 @@
 <template>
     <div class="sixth-part">
-        <carte v-bind:style="styleObject1"><img src="./../../assets/pictures/Collection/Collection20.png" alt=""></carte>
+        <carte class="styleObject1"><img src="./../../assets/pictures/Collection/Collection20.png" alt=""></carte>
     </div>
 </template>
 
@@ -11,16 +11,7 @@ export default {
   name: 'Collection',
   components: {
     Carte
-  },
-  data : {
-    styleObject1 : {
-      backgroundColor : '#E2C491'
-    },
-    styleObject2 : {
-      backgroundColor : '#ffffff'
-    }
   }
-  
 }
 </script>
 
@@ -28,6 +19,19 @@ export default {
 
 .sixth-part {
     height: 100vh;
+
+    .styleObject1 {
+      background-color: #E2C491;
+
+      img {
+        position: relative;
+        z-index: 2;
+      }
+    }
+
+    .styleObject2 {
+      background-color: #ffffff;
+    }
 }
 
 </style>
